@@ -1,9 +1,7 @@
 $(document).ready(function(){
-    $("#header").load("html/include/header.html");
-    $("#footer").load("html/include/footer.html");
-    $("#content").load("html/main.html");
+    $('#fullpage').fullpage({
+        sectionsColor: ['#1bbc9b', '#8b6a51', '#7BAABE'],
+        anchors: ['info', 'portfolio', 'contact'],
+        menu: '#menu',
+    });
 });
-
-function move(src) {
-    $("#content").load(src + ".html");
-}
